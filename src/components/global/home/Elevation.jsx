@@ -7,9 +7,7 @@ import GalleryImg5 from "../../../assets/slider/gallery_img5.jpg";
 import GalleryImg6 from "../../../assets/img/banner1.jpg";
 import GalleryImg7 from "../../../assets/img/banner2.jpg";
 import Slider from "react-slick";
-import { MyContext } from "../../../App";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import { div } from "framer-motion/client";
+import { MyContext } from "../../../App"; 
 const sliderImgData = [
   GalleryImg1,
   GalleryImg2,
@@ -44,7 +42,7 @@ const Elevation = () => {
       <h2 className="text-center ">
         Gallery - Pristine Kyra Viman Nagar
       </h2>
-      <div className=" px-2">
+      <div className=" px-4">
         <Slider
           ref={(slider) => {
             sliderRef = slider;
@@ -52,7 +50,7 @@ const Elevation = () => {
           {...settings}
         >
           {sliderImgData.map((value, index) => (
-            <div  className="mx-auto pt-10">
+            <div key={index}  className="mx-auto pt-10">
             <img
               src={value}
               alt={`slider-duplicate-${index}`}
