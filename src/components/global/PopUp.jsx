@@ -70,7 +70,7 @@ const PopUp = () => {
         <br>
       `;
       Email.send({
-        SecureToken: "fb8ca823-ba7c-4ebf-a072-bfb263221e6c",
+        SecureToken: "65ce8895-1185-41ed-ac43-74e86d9d15e1",
         From: "guptanikhi25@gmail.com",
         To: "guptanikhi25@gmail.com",
         Subject: "Details from Pristine Kyra Viman Nagar",

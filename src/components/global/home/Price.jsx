@@ -47,9 +47,8 @@ const Price = () => {
                 <td className=" text-xs md:text-base  transition-all duration-1000 px-1">
                   <button
                     onClick={() => setIsPopUpOpen(true)}
-                    className="bg-logoBlue px-1 md:px-9 relative overflow-hidden group text-white    py-[5px] rounded "
+                    className="bg-logoBlue px-1 md:px-9 hover:bg-black transition-all duration-500 relative overflow-hidden group text-white    py-[5px] rounded "
                   >
-                    <div className="absolute transition-all duration-700  rounded-[100%] -top-5 -bottom-5  -left-5 -right-5 group-hover:translate-y-0  translate-y-full bg-logoColor"></div>
                     <span className="relative font-semibold z-10">
                       <span className="hidden  md:inline"> Price</span> Breakup
                     </span>
