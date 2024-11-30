@@ -47,7 +47,7 @@ const Contact = () => {
       `;
 
       Email.send({
-        SecureToken: "af1280f4-d2d6-4b40-84a6-f83f8d784ede",
+        SecureToken: "fb8ca823-ba7c-4ebf-a072-bfb263221e6c",
         From: "guptanikhi25@gmail.com",
         To: "guptanikhi25@gmail.com",
         Subject: "Details from  Pristine Kyra Viman Nagar",
