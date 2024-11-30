@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom"; // if using react-router for navigation
+import { MyContext } from "../../../App";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,7 @@ const Contact = () => {
     email: "",
     phone: "",
   });
+  const { contact } = useContext(MyContext);
 
   const [errors, setErrors] = useState({});
   const navigate = useNavigate(); // for redirection after form submission
@@ -45,7 +47,7 @@ const Contact = () => {
       `;
 
       Email.send({
-        SecureToken: "fb8ca823-ba7c-4ebf-a072-bfb263221e6c",
+        SecureToken: "af1280f4-d2d6-4b40-84a6-f83f8d784ede",
         From: "guptanikhi25@gmail.com",
         To: "guptanikhi25@gmail.com",
         Subject: "Details from  Pristine Kyra Viman Nagar",
@@ -59,14 +61,14 @@ const Contact = () => {
           });
           navigate("/thank-you");
         } else {
-          alert("Form not submitted!");
+          alert(message);
         }
       });
     }
   };
 
   return (
-    <section className=" relative mb-10  md:px-5  2xl:px-40">
+    <section ref={contact} className=" relative mb-10  md:px-5  2xl:px-40">
       <div className="container mx-auto px-5 mt-10">
         <div className="mb-12 text-center">
           <h2>Get In Touch</h2>

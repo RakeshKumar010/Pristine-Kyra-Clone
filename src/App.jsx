@@ -14,9 +14,10 @@ const App = () => {
   const view=useRef()
   const memories=useRef()
   const price =useRef()
+  const contact =useRef()
   // const []
   return (
-    <MyContext.Provider value={{isPopUpOpen,setIsPopUpOpen,home,overview,location,unit,amenitie,gallery,view,memories,price}}>
+    <MyContext.Provider value={{isPopUpOpen,setIsPopUpOpen,home,overview,location,unit,amenitie,gallery,view,memories,price,contact}}>
     <Layout/>
     </MyContext.Provider>
   )

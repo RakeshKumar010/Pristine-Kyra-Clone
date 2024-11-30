@@ -15,7 +15,8 @@ const Navbar = () => {
     price,
     overview,
     location, 
-    amenitie, 
+    amenitie,
+    contact 
   } = useContext(MyContext);
   const scrollToRef = (elementRef) => {
     const topSpace = 100;
@@ -53,13 +54,13 @@ const Navbar = () => {
               Location
             </li>
           </a>
-          <a href="#contact">
+          <a href="#contact" onClick={()=>scrollToRef(contact)}>
             <li className="px-2  py-1 rounded-full hover:bg-black/10  transition-all duration-300    font-semibold leading-[24px]">
-              Contact
+              Contact  
             </li>
           </a>
           <li className="flex px-2  py-1 font-semibold leading-[24px]  items-center  ">
-            <MdCall /> +91 8888084100
+            <MdCall /> +91 9699089259
           </li>
           <li className="text-[22px] px-2  py-1 font-[700] leading-[32px]">
             {" "}
@@ -143,7 +144,7 @@ const Navbar = () => {
             </a>
 
             <li className="pl-5 font-semibold  flex items-center gap-3  p-[15px_6%_16px_6%] tracking-wide">
-              <MdCall /> +91 8888084100
+              <MdCall /> +91 9699089259
             </li>
             <li className="pl-5 font-semibold    p-[15px_6%_16px_6%] tracking-wide">
               {" "}

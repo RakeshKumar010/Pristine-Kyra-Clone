@@ -36,14 +36,13 @@ const Home = () => {
         <Overview />
         <HeartViman />
         <Amenities />
-
-       <Price />
+        <Price />
         <UnitPlan />
-         <Elevation />
-       <Video />
-          <Location />
+        <Elevation />
+        <Video />
+        <Location />
         <AboutDeveloper />
-       <Contact />
+        <Contact />
         <Footer />
         <ScrollButton />
       </div>
