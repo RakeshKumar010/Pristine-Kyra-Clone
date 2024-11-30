@@ -5,8 +5,8 @@ import Logo from '../../../assets/logo.jpg'
 const AboutDeveloper = () => {
   const { setIsPopUpOpen } = useContext(MyContext);
   return (
-    <section className=" bg-[#fffdf1]   flex justify-center items-center">
-      <div className="  mx-auto   md:px-12 lg:px-20">
+    <section className=" bg-[#fffdf1] px-2  flex justify-center items-center">
+      <div className="     md:px-12 lg:px-20">
         <div className="   rounded-lg px-3 py-8 md:p-12 flex flex-col items-center text-center">
           <h2>About Pristine Properties</h2>
           <img src={Logo} alt="..." className="mb-10 w-52" />

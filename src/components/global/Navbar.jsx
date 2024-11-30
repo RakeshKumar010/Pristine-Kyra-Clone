@@ -10,17 +10,12 @@ import { MdCall } from "react-icons/md";
 const Navbar = () => {
   const [navIsOpen, setNavIsOpen] = useState(false);
   const {
-    isPopUpOpen,
-    setIsPopUpOpen,
+    isPopUpOpen, 
     home,
     price,
     overview,
-    location,
-    unit,
-    amenitie,
-    gallery,
-    view,
-    memories,
+    location, 
+    amenitie, 
   } = useContext(MyContext);
   const scrollToRef = (elementRef) => {
     const topSpace = 100;
@@ -89,7 +84,7 @@ const Navbar = () => {
         )}
       </div>
       {navIsOpen ? (
-        <div className="  bg-[#58c6ed]     transition-all    duration-1000">
+        <div className="  bg-[#58c6ed] relative z-10    transition-all    duration-1000">
           <ul className="flex flex-col lg:hidden  divide-y-[1px] divide-white  text-white ">
             <a
               href="#overview"
@@ -98,7 +93,9 @@ const Navbar = () => {
                 scrollToRef(overview);
               }}
             >
-              <li className="pl-5 font-semibold    p-[15px_6%_16px_6%] tracking-wide">Overview</li>
+              <li className="pl-5 font-semibold    p-[15px_6%_16px_6%] tracking-wide">
+                Overview
+              </li>
             </a>
             <a
               href="#amenities"
@@ -107,7 +104,9 @@ const Navbar = () => {
                 scrollToRef(amenitie);
               }}
             >
-              <li className="pl-5 font-semibold    p-[15px_6%_16px_6%] tracking-wide">Amenities</li>
+              <li className="pl-5 font-semibold    p-[15px_6%_16px_6%] tracking-wide">
+                Amenities
+              </li>
             </a>
             <a
               href="#configuration"
@@ -127,7 +126,9 @@ const Navbar = () => {
                 scrollToRef(location);
               }}
             >
-              <li className="pl-5 font-semibold    p-[15px_6%_16px_6%] tracking-wide">Location</li>
+              <li className="pl-5 font-semibold    p-[15px_6%_16px_6%] tracking-wide">
+                Location
+              </li>
             </a>
             <a
               href="#contact"
@@ -136,16 +137,19 @@ const Navbar = () => {
                 scrollToRef(contact);
               }}
             >
-              <li className="pl-5 font-semibold    p-[15px_6%_16px_6%] tracking-wide">Contact us</li>
+              <li className="pl-5 font-semibold    p-[15px_6%_16px_6%] tracking-wide">
+                Contact us
+              </li>
             </a>
 
             <li className="pl-5 font-semibold  flex items-center gap-3  p-[15px_6%_16px_6%] tracking-wide">
               <MdCall /> +91 8888084100
             </li>
-            <li className="pl-5 font-semibold    p-[15px_6%_16px_6%] tracking-wide"> Pristine Kyra</li>
+            <li className="pl-5 font-semibold    p-[15px_6%_16px_6%] tracking-wide">
+              {" "}
+              Pristine Kyra
+            </li>
           </ul>
-
-         
         </div>
       ) : null}
       {isPopUpOpen ? <PopUp /> : null}
