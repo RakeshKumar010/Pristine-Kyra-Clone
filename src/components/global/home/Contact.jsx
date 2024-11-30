@@ -53,8 +53,6 @@ const Contact = () => {
         Subject: "Details from  Pristine Kyra Viman Nagar",
         Body: body,
       }).then((message) => {
-        alert(message);
-
         if (message === "OK") {
           setFormData({
             name: "",
